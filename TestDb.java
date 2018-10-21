@@ -12,6 +12,8 @@ public class TestDb implements StudentSys{
         System.out.println("delete to mysql");
     }
     public static void main(String[] args){
+        //when the project needs to change the class, use poly
+        //StudentSys db=new Oracle(); This is the only part that need to be changed in the original programming.
         TestDb db=new TestDb();
         db.add(01,"John");
         db.update(02,"Sam");
