@@ -15,10 +15,16 @@ public class Array{
         System.arraycopy(a,0,b,0,a.length);
         a=b;
         print(a);
+        if(null==""){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
     }
     public static void  print(int[] arr){
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i]);
         }
-    }   
+    }
+
 }
