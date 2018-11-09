@@ -1,5 +1,3 @@
-package OnlineShop;
-
 import java.io.NotActiveException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
