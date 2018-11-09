@@ -28,9 +28,24 @@ public class FileFunc {
 		System.out.println(f2.getAbsolutePath());
 		
 		File f5=new File("c:");
+		f5.mkdirs();
+		System.out.println(f5.getAbsolutePath());
 		System.out.println(f5.isDirectory());
+		listFile(f1);
+//		listFile(f3);
 		
-		
+	}
+	
+	private static void listFile(File f){
+		File[] files=f.listFiles();
+        for (File file :files){
+        	System.out.println(file.getName()+"\t\t"+(file.isFile()?"file":"directory")
+        +"\t\t"+file.getParent()+"\t\t"+file.getAbsolutePath());
+        	if(file.isDirectory()){
+        		listFile(file);
+        	}
+        	
+        }
 	}
 
 }
