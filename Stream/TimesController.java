@@ -1,7 +1,7 @@
 public class TimesController {
 	public static void main(String[] args){
-		//code();
-		decode();
+		code();
+		//decode();
 	} 
 	public static void decode(){
 		try (BufferedInputStream bin = new BufferedInputStream(new FileInputStream("trial"+File.separator+"config.txt"));
