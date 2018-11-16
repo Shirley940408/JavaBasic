@@ -6,6 +6,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Lambda",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Lambda",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Array",
             "request": "launch",
             "cwd": "${workspaceFolder}",
